@@ -11,10 +11,12 @@ import {
   LogOutIcon,
   MessageSquareIcon,
   ChevronDownIcon,
+  BarChartIcon,
 } from "@/components/icons";
 
 const links = [
   { href: "/admin", label: "Dashboard", icon: GridIcon, exact: true },
+  { href: "/admin/analytics", label: "Analytics", icon: BarChartIcon },
   { href: "/admin/services", label: "Services", icon: LayoutIcon },
   { href: "/admin/portfolio", label: "Portfolio", icon: ExternalLinkIcon },
   { href: "/admin/testimonials", label: "Testimonials", icon: MessageSquareIcon },

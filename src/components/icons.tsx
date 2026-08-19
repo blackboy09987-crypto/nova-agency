@@ -215,6 +215,23 @@ export function MessageSquareIcon({ className }: IconProps) {
   );
 }
 
+export function EyeIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base} aria-hidden="true">
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
+export function BarChartIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base} aria-hidden="true">
+      <path d="M4 20V10M12 20V4M20 20v-6" />
+    </svg>
+  );
+}
+
 export const serviceIcons: Record<string, (p: IconProps) => ReactElement> = {
   layout: LayoutIcon,
   palette: PaletteIcon,

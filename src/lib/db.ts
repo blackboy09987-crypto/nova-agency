@@ -59,3 +59,42 @@ export async function writeContentRow(data: unknown): Promise<void> {
     ON CONFLICT (id) DO UPDATE SET data = EXCLUDED.data
   `;
 }
+
+// ---- Page view analytics ----
+// Deliberately a separate table from site_content: pageviews are written on
+// nearly every request, and sharing a row with admin-edited content would
+// mean a burst of traffic could race with (and clobber) a content save.
+
+let analyticsEnsured = false;
+
+async function ensurePageViewsTable() {
+  if (analyticsEnsured) return;
+  const db = client();
+  await db`
+    CREATE TABLE IF NOT EXISTS page_views (
+      path TEXT NOT NULL,
+      day DATE NOT NULL,
+      count INTEGER NOT NULL DEFAULT 0,
+      PRIMARY KEY (path, day)
+    )
+  `;
+  analyticsEnsured = true;
+}
+
+export async function recordPageViewRow(path: string, day: string): Promise<void> {
+  await ensurePageViewsTable();
+  const db = client();
+  await db`
+    INSERT INTO page_views (path, day, count) VALUES (${path}, ${day}, 1)
+    ON CONFLICT (path, day) DO UPDATE SET count = page_views.count + 1
+  `;
+}
+
+export type PageViewRow = { path: string; day: string; count: number };
+
+export async function readPageViewRows(): Promise<PageViewRow[]> {
+  await ensurePageViewsTable();
+  const db = client();
+  const rows = await db`SELECT path, day::text AS day, count FROM page_views`;
+  return rows as unknown as PageViewRow[];
+}

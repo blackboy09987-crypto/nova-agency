@@ -5,22 +5,32 @@ import {
   getTestimonials,
   getFaqs,
 } from "@/lib/store";
+import { getAnalyticsSummary } from "@/lib/analytics";
 import {
   LayoutIcon,
   ExternalLinkIcon,
   MessageSquareIcon,
   ChevronDownIcon,
+  EyeIcon,
 } from "@/components/icons";
 
 export default async function AdminDashboardPage() {
-  const [services, portfolioItems, testimonials, faqs] = await Promise.all([
-    getServices(),
-    getPortfolioItems(),
-    getTestimonials(),
-    getFaqs(),
-  ]);
+  const [services, portfolioItems, testimonials, faqs, analytics] =
+    await Promise.all([
+      getServices(),
+      getPortfolioItems(),
+      getTestimonials(),
+      getFaqs(),
+      getAnalyticsSummary(),
+    ]);
 
   const cards = [
+    {
+      href: "/admin/analytics",
+      label: "Total Views",
+      count: analytics.totalViews,
+      icon: EyeIcon,
+    },
     {
       href: "/admin/services",
       label: "Services",
@@ -54,7 +64,7 @@ export default async function AdminDashboardPage() {
         Manage the content shown across the Nova Agency website.
       </p>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {cards.map((card) => (
           <Link
             key={card.href}

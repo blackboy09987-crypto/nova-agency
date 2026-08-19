@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local-only analytics data (production uses Postgres instead)
+/data/analytics.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
