@@ -1,4 +1,4 @@
-import { neon } from "@neondatabase/serverless";
+import { neon, type NeonQueryFunction } from "@neondatabase/serverless";
 
 /**
  * Storage backend selection: if a Postgres connection string is present
@@ -16,9 +16,9 @@ export function hasDatabase(): boolean {
   return Boolean(getConnectionString());
 }
 
-let sql: ReturnType<typeof neon> | null = null;
+let sql: NeonQueryFunction<false, false> | null = null;
 
-function client() {
+function client(): NeonQueryFunction<false, false> {
   if (!sql) {
     const url = getConnectionString();
     if (!url) throw new Error("No database connection string configured.");

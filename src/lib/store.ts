@@ -297,7 +297,7 @@ async function createItem<T extends { id: string }>(
 ): Promise<T> {
   const content = await readContent();
   const newItem = { ...item, id: randomUUID() } as T;
-  (content[section] as T[]).push(newItem);
+  (content[section] as unknown as T[]).push(newItem);
   await writeContent(content);
   return newItem;
 }
@@ -308,7 +308,7 @@ async function updateItem<T extends { id: string }>(
   patch: Omit<T, "id">
 ): Promise<T | null> {
   const content = await readContent();
-  const list = content[section] as T[];
+  const list = content[section] as unknown as T[];
   const index = list.findIndex((i) => i.id === id);
   if (index === -1) return null;
   const updated = { ...patch, id } as T;
