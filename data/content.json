@@ -1,0 +1,180 @@
+{
+  "services": [
+    {
+      "id": "ui-ux-design",
+      "number": "01",
+      "slug": "ui-ux-design",
+      "title": "UI/UX Design",
+      "description": "Beautiful, intuitive and user-focused interfaces designed to create better digital experiences.",
+      "icon": "layout"
+    },
+    {
+      "id": "graphic-designing",
+      "number": "02",
+      "slug": "graphic-designing",
+      "title": "Graphic Designing",
+      "description": "Creative visual designs that communicate your brand and make it memorable.",
+      "icon": "palette"
+    },
+    {
+      "number": "03",
+      "title": "Content Writing",
+      "description": "Engaging, clear and strategic content created for websites, brands and digital platforms.",
+      "icon": "pen",
+      "slug": "content-writing",
+      "id": "content-writing"
+    },
+    {
+      "id": "web-design-development",
+      "number": "04",
+      "slug": "web-design-development",
+      "title": "Web Design & Development",
+      "description": "Modern, responsive and high-performing websites built around your business goals.",
+      "icon": "code"
+    },
+    {
+      "id": "mobile-app-development",
+      "number": "05",
+      "slug": "mobile-app-development",
+      "title": "Mobile App Development",
+      "description": "User-friendly mobile applications designed for modern businesses and digital products.",
+      "icon": "device"
+    },
+    {
+      "id": "video-reel-creation",
+      "number": "06",
+      "slug": "video-reel-creation",
+      "title": "Video & Reel Creation",
+      "description": "Engaging videos and short-form content designed to capture attention and strengthen your brand.",
+      "icon": "play"
+    },
+    {
+      "id": "seo",
+      "number": "07",
+      "slug": "seo",
+      "title": "SEO",
+      "description": "Search optimization strategies designed to improve visibility, reach and organic growth.",
+      "icon": "search"
+    },
+    {
+      "id": "social-media-management",
+      "number": "08",
+      "slug": "social-media-management",
+      "title": "Social Media Management",
+      "description": "Strategic content and social media management designed to build your audience and online presence.",
+      "icon": "share"
+    }
+  ],
+  "portfolioItems": [
+    {
+      "id": "5a3301ba-a8af-4043-b5e1-50d0f87520ac",
+      "name": "Aurora Retail",
+      "category": "Websites",
+      "description": "A concept e-commerce storefront exploring clean navigation and a fast, conversion-focused checkout flow."
+    },
+    {
+      "id": "303d6722-0f78-40b1-9122-da3d1371ede6",
+      "name": "Pulse Fitness App",
+      "category": "UI/UX",
+      "description": "A concept mobile app interface for a fitness brand, focused on simple onboarding and daily engagement."
+    },
+    {
+      "id": "6d5975e3-9bf0-4b87-9613-74c65a7994eb",
+      "name": "Northline Studio",
+      "category": "Branding",
+      "description": "A concept visual identity system exploring logo, typography and color for a creative studio brand."
+    },
+    {
+      "id": "67119f09-fcea-4cce-b33e-740e07fc1568",
+      "name": "Bloom & Co. Campaign",
+      "category": "Social Media",
+      "description": "A concept content series exploring grid layout, tone of voice and visual consistency for a lifestyle brand."
+    },
+    {
+      "id": "18ab94ca-ba35-4e66-b2e8-8448e8dbd438",
+      "name": "Momentum Launch Reel",
+      "category": "Video",
+      "description": "A concept short-form video direction designed to introduce a product launch across social platforms."
+    },
+    {
+      "id": "c8785636-0784-4b6a-bbd0-c27fc3baf039",
+      "name": "Ledger Finance App",
+      "category": "Mobile Apps",
+      "description": "A concept finance app interface exploring clarity, trust and ease of use for everyday money management."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "e4c349f8-7461-400f-a66c-795c4062ff2b",
+      "quote": "Great working with you — thanks for designing my website, I've already seen improvement in my business!",
+      "attribution": "Dr. Salman, Dr Salman's Orthodontic & Dental Implantology Centre"
+    },
+    {
+      "quote": "“Nova Agency understood our requirements perfectly and turned our idea into a clean, modern website. The final result looks professional and works exactly how we wanted.”",
+      "attribution": "Muhammad Hamza Business Owner — Karachi",
+      "id": "92bed8bb-f5ef-43d8-ab56-cc071a6e5d0e"
+    },
+    {
+      "quote": "The branding and graphic design work gave our business a completely fresh look. Everything feels much more professional and consistent now",
+      "attribution": "Ahmed Raza  Founder — Lahore",
+      "id": "30547736-214a-4f4c-9ccd-5746cb51434c"
+    },
+    {
+      "quote": "Nova helped us improve our social media presence with better visuals and content. Our online presence now feels much more organized and professional",
+      "attribution": "Usman Ali  Business Owner — Islamabad",
+      "id": "7af34eb4-a1c8-4357-912a-5dd0af829b9c"
+    },
+    {
+      "quote": "The UI/UX design was modern, clean, and easy to use. Nova took our basic concept and turned it into a polished digital experience.",
+      "attribution": "Saad Khan Startup Founder — Karachi",
+      "id": "f2748d48-f514-4fd0-8057-b66d6d11de02"
+    },
+    {
+      "quote": "“Having design, development, content, and digital marketing services available through one agency made the whole process much easier. Nova delivered a professional experience from start to finish.”",
+      "attribution": "Bilal Ahmed  Business Owner — Rawalpindi",
+      "id": "82816e16-70d0-4c59-a96f-73d57f602164"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "9131305f-50e6-4828-921a-8ccc44913aab",
+      "question": "What services does Nova Agency offer?",
+      "answer": "We provide UI/UX design, graphic design, content writing, web design and development, mobile app development, video and reel creation, SEO, and social media management."
+    },
+    {
+      "id": "49b4a52d-a3f9-4197-91fa-7b25475ff1d5",
+      "question": "How can I start a project?",
+      "answer": "Simply contact us through WhatsApp, Instagram DM or our contact form and tell us about your project."
+    },
+    {
+      "id": "d8cd09f0-089c-409c-96b5-3e73823c0f1b",
+      "question": "Do you work with international clients?",
+      "answer": "Yes. Nova Agency is open to working with businesses and clients locally and internationally."
+    },
+    {
+      "id": "f7427165-1018-4304-932f-0bb4b9f88473",
+      "question": "How much does a website cost?",
+      "answer": "Pricing depends on the project's requirements, complexity, design, functionality and scope. Contact us for a customized quote."
+    },
+    {
+      "id": "cc078b14-7cb9-4f76-b150-609fd5654707",
+      "question": "How long does a project take?",
+      "answer": "Timeline depends on the project's size and requirements. We provide an estimated timeline after understanding the project."
+    },
+    {
+      "id": "9e418656-dd80-4d03-bb6c-e1d923ffaed5",
+      "question": "Can you manage our social media?",
+      "answer": "Yes. We offer social media management along with content creation and strategy."
+    },
+    {
+      "id": "ec03271b-bd58-4d02-9ae1-3fb80d6b6cbf",
+      "question": "Can you redesign an existing website?",
+      "answer": "Yes. We can redesign and modernize existing websites to improve their appearance, usability and overall digital experience."
+    },
+    {
+      "id": "438a78af-163c-4df2-bc8c-3464780a5ad5",
+      "question": "Do you provide custom packages?",
+      "answer": "Yes. Services can be combined into a customized package according to the client's requirements."
+    }
+  ]
+}
