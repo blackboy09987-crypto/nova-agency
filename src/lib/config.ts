@@ -3,7 +3,7 @@ export const siteConfig = {
   name: "Nova Agency",
   tagline: "Building Brands for the Digital World",
   description:
-    "Nova Agency helps businesses build and grow their digital presence through UI/UX, graphic design, web development, mobile apps, content, video, SEO and social media.",
+    "Nova Agency is a digital agency in Pakistan helping businesses build and grow their online presence through UI/UX, graphic design, web development, mobile apps, content, video, SEO and social media.",
   url: "https://nova-agency-seven.vercel.app",
   whatsappNumber: "923063977360", // digits only, with country code, no + or spaces
   whatsappDisplay: "+92 306 3977360",

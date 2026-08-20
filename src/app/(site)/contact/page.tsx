@@ -5,9 +5,9 @@ import ContactForm from "@/components/ContactForm";
 import { getServices } from "@/lib/store";
 
 export const metadata: Metadata = {
-  title: "Contact | Nova Agency",
+  title: "Contact Nova Agency | Get a Digital Project Quote",
   description:
-    "Tell us about your project. Reach Nova Agency via WhatsApp, Instagram DM or our contact form for a customized quote.",
+    "Tell us about your project. Reach Nova Agency, a digital agency in Pakistan, via WhatsApp, Instagram DM or our contact form for a customized quote.",
   alternates: { canonical: "/contact" },
 };
 

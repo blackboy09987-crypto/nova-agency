@@ -5,9 +5,9 @@ import CTASection from "@/components/CTASection";
 import { getPortfolioItems } from "@/lib/store";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Nova Agency",
+  title: "Portfolio | Web Design & Branding Work by Nova Agency",
   description:
-    "Concept work across websites, UI/UX, branding, social media, video and mobile apps — a glimpse into what Nova Agency can create.",
+    "Concept work across websites, UI/UX, branding, social media, video and mobile apps — a glimpse into what Nova Agency, a Pakistan-based digital agency, can create.",
   alternates: { canonical: "/portfolio" },
 };
 

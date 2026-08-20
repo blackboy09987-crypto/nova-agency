@@ -12,9 +12,9 @@ import Button from "@/components/Button";
 import { getPortfolioItems } from "@/lib/store";
 
 export const metadata: Metadata = {
-  title: "Nova Agency | Digital Design, Web Development & Digital Solutions",
+  title: "Nova Agency | Digital Design & Web Development Agency in Pakistan",
   description:
-    "Nova Agency helps businesses build and grow their digital presence through UI/UX, graphic design, web development, mobile apps, content, video, SEO and social media.",
+    "Nova Agency is a digital agency in Pakistan helping businesses build and grow their online presence through UI/UX, graphic design, web development, mobile apps, content, video, SEO and social media.",
   alternates: { canonical: "/" },
 };
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   openGraph: {
-    title: "Nova Agency | Digital Design, Web Development & Digital Solutions",
+    title: "Nova Agency | Digital Design & Web Development Agency in Pakistan",
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova Agency | Digital Design, Web Development & Digital Solutions",
+    title: "Nova Agency | Digital Design & Web Development Agency in Pakistan",
     description: siteConfig.description,
   },
   verification: {

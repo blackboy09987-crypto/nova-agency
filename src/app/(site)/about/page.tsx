@@ -5,9 +5,9 @@ import CTASection from "@/components/CTASection";
 import { values } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About Us | Nova Agency",
+  title: "About Nova Agency | Digital Agency in Pakistan",
   description:
-    "Nova Agency is a modern digital agency combining design, technology, content and strategy to help businesses build a stronger digital presence.",
+    "Nova Agency is a modern digital agency based in Pakistan, combining design, technology, content and strategy to help businesses worldwide build a stronger digital presence.",
   alternates: { canonical: "/about" },
 };
 

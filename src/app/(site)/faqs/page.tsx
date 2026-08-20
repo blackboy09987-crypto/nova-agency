@@ -5,9 +5,9 @@ import CTASection from "@/components/CTASection";
 import { getFaqs } from "@/lib/store";
 
 export const metadata: Metadata = {
-  title: "FAQs | Nova Agency",
+  title: "FAQs | Nova Agency — Digital Agency in Pakistan",
   description:
-    "Answers to common questions about Nova Agency's services, pricing, timelines and how to start a project.",
+    "Answers to common questions about Nova Agency's services, pricing, timelines and how to start a project with our digital agency in Pakistan.",
   alternates: { canonical: "/faqs" },
 };
 

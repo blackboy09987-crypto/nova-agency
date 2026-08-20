@@ -5,9 +5,9 @@ import ProcessSection from "@/components/ProcessSection";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Services | Nova Agency",
+  title: "Digital Agency Services in Pakistan | Nova Agency",
   description:
-    "UI/UX design, graphic design, content writing, web development, mobile apps, video, SEO and social media management — all under one roof.",
+    "UI/UX design, graphic design, content writing, web development, mobile apps, video, SEO and social media management — all under one roof at Nova Agency, Pakistan.",
   alternates: { canonical: "/services" },
 };
 
