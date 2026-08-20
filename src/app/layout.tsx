@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     title: "Nova Agency | Digital Design, Web Development & Digital Solutions",
     description: siteConfig.description,
   },
+  verification: {
+    google: "v0QhgJwkZzBzGxOtT267ad_6440flNMg3_MbZ_79oIE",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
