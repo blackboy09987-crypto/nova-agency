@@ -1,26 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  /* Dark navy theme: page background + text tokens flipped so the whole
-     site reads dark, not just the hero/header. --color-navy-2 doubles as
-     the primary text color (was dark-on-light, now light-on-dark) so every
-     existing text-navy-2 / border-navy-2 usage flips automatically. */
-  --color-bg: #050b17;
+  /* Navy + white theme: header, hero, footer and page banners stay dark
+     navy (they use --color-navy-deep directly), while body content
+     sections use these tokens — white background, dark navy text — for
+     a balanced navy-and-white look rather than an all-dark site. */
+  --color-bg: #f8fafc;
   --color-navy: #071a3a;
   --color-navy-deep: #050b17;
-  --color-navy-2: #f3f6fb;
-  --color-surface: #0c1a38;
+  --color-navy-2: #0b1736;
+  --color-surface: #ffffff;
   --color-blue: #1473ff;
-  --color-blue-light: #0d1f45;
+  --color-blue-light: #eaf3ff;
   --color-cyan: #3fd0ff;
-  --color-muted: #98a6bf;
+  --color-muted: #64748b;
 }
 
-/* Admin panel is a light-mode dashboard and was built against the
-   original (light) meaning of these tokens. Scope it back to that
-   palette so it doesn't inherit the public site's dark reskin — without
-   this, --color-navy-2 (now near-white for the dark site) renders as
-   invisible white-on-white text inside the admin's white cards/inputs. */
+/* Admin panel pins the same light palette explicitly, so it stays
+   correct even if the public site's tokens above ever change again. */
 .admin-scope {
   --color-bg: #f8fafc;
   --color-navy-2: #0b1736;

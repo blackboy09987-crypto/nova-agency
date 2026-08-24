@@ -17,7 +17,7 @@ export default function CTASection({
       <p className="text-lg font-medium text-navy-2/70">{title}</p>
       <Link
         href={ctaHref}
-        className="group inline-flex items-center gap-2 text-lg font-bold text-blue transition-colors hover:text-cyan"
+        className="group inline-flex items-center gap-2 text-lg font-bold text-blue transition-colors hover:text-navy-2"
       >
         {ctaLabel}
         <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
