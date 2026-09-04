@@ -60,7 +60,7 @@ export default function PortfolioGrid({ items: allItems, showFilters = false, li
                   .join("")}
               </span>
               <span className="absolute left-3 top-3 rounded-full bg-white/15 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur">
-                Concept Project
+                {item.url ? "Live Project" : "Concept Project"}
               </span>
             </div>
             <div className="flex flex-1 flex-col gap-3 p-6">
@@ -69,13 +69,25 @@ export default function PortfolioGrid({ items: allItems, showFilters = false, li
               </span>
               <h3 className="font-display text-lg font-bold text-navy-2">{item.name}</h3>
               <p className="flex-1 text-sm leading-relaxed text-muted">{item.description}</p>
-              <Link
-                href="/contact"
-                className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-blue"
-              >
-                View Project
-                <ArrowRightIcon className="h-3.5 w-3.5 transition-transform duration-200 group-hover/link:translate-x-1" />
-              </Link>
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-blue"
+                >
+                  View Project
+                  <ArrowRightIcon className="h-3.5 w-3.5 transition-transform duration-200 group-hover/link:translate-x-1" />
+                </a>
+              ) : (
+                <Link
+                  href="/contact"
+                  className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-blue"
+                >
+                  View Project
+                  <ArrowRightIcon className="h-3.5 w-3.5 transition-transform duration-200 group-hover/link:translate-x-1" />
+                </Link>
+              )}
             </div>
           </div>
         ))}

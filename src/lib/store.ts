@@ -18,6 +18,7 @@ export type PortfolioItem = {
   name: string;
   category: PortfolioCategory;
   description: string;
+  url?: string;
 };
 
 export type Testimonial = {
@@ -118,6 +119,22 @@ const seedServices: Service[] = [
 ];
 
 const seedPortfolioItems: PortfolioItem[] = [
+  {
+    id: randomUUID(),
+    name: "Aliza's Thread House",
+    category: "Websites",
+    description:
+      "A clean, elegant e-commerce website for a premium Pakistani clothing brand — designed for a smooth browsing and shopping experience.",
+    url: "https://aliza-thread-house.vercel.app/",
+  },
+  {
+    id: randomUUID(),
+    name: "Scents by Hiba",
+    category: "Websites",
+    description:
+      "A modern, visually rich website for a luxury perfume brand, built to showcase their collection and drive online sales.",
+    url: "https://scentsbyhiba.vercel.app/",
+  },
   {
     id: randomUUID(),
     name: "Aurora Retail",
