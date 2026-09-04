@@ -186,6 +186,18 @@ const seedTestimonials: Testimonial[] = [
       "Great working with you — thanks for designing my website, I've already seen improvement in my business!",
     attribution: "Dr. Salman, Dr Salman's Orthodontic & Dental Implantology Centre",
   },
+  {
+    id: randomUUID(),
+    quote:
+      "So happy with how my website turned out! Big thanks to Nova Agency for being super helpful, efficient, and great at what they do. If you're looking for a reliable web developer, check them out!",
+    attribution: "Aliza, Aliza's Thread House",
+  },
+  {
+    id: randomUUID(),
+    quote:
+      "Thank you! I'm really happy with how the website turned out. Wishing you guys all the growth!",
+    attribution: "Hiba, Scents by Hiba",
+  },
 ];
 
 const seedFaqs: FAQItem[] = [
