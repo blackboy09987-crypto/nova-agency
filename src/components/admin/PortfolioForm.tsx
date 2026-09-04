@@ -34,7 +34,14 @@ export default function PortfolioForm({
         name="url"
         required={false}
         defaultValue={defaultValues?.url}
-        hint='Paste the live website link here — e.g. https://client.vercel.app/ — and the card will link directly to it.'
+        hint='Paste the live website link — e.g. https://client.vercel.app/ — card will link directly to it.'
+      />
+      <TextField
+        label="Thumbnail Image URL (optional)"
+        name="image"
+        required={false}
+        defaultValue={defaultValues?.image}
+        hint='Upload your screenshot to imgbb.com (free) and paste the direct image link here. This overrides the auto-generated screenshot.'
       />
 
       <div className="mt-2 flex gap-3">

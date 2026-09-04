@@ -12,11 +12,13 @@ import type { PortfolioCategory } from "@/lib/data";
 
 function readFields(formData: FormData) {
   const url = (formData.get("url") as string)?.trim();
+  const image = (formData.get("image") as string)?.trim();
   return {
     name: (formData.get("name") as string)?.trim(),
     category: formData.get("category") as PortfolioCategory,
     description: (formData.get("description") as string)?.trim(),
     ...(url ? { url } : {}),
+    ...(image ? { image } : {}),
   };
 }
 

@@ -61,11 +61,11 @@ export default function PortfolioGrid({ items: allItems, showFilters = false, li
             className="reveal group flex flex-col overflow-hidden rounded-2xl border border-navy-2/8 bg-surface transition-all duration-300 hover:-translate-y-1 hover:border-blue/25 hover:shadow-[0_24px_48px_-20px_rgba(20,115,255,0.22)]"
           >
             <div className="relative h-44 overflow-hidden">
-              {item.url ? (
+              {item.image || item.url ? (
                 <>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={screenshotUrl(item.url)}
+                    src={item.image ?? screenshotUrl(item.url!)}
                     alt={item.name}
                     className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"

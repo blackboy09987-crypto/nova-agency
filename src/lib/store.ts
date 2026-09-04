@@ -19,6 +19,7 @@ export type PortfolioItem = {
   category: PortfolioCategory;
   description: string;
   url?: string;
+  image?: string;
 };
 
 export type Testimonial = {
